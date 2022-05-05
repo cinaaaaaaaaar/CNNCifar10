@@ -23,6 +23,6 @@ class Model:
         self.model = model
         return model
     def train_network(self, x_train, y_train, x_test, y_test, epochs):
-        path = "D:\\Users\\Coding\\Python\\ml\\neural_network\\weights\\weights.h5"
+        path = "weights\\weights.h5"
         self.model.fit(x_train, y_train, epochs=epochs, validation_data=(x_test, y_test))
         self.model.save_weights(path)

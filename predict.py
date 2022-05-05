@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from classes.Model import Model, test_images, class_names
 from random import randint
 
-path = "D:\\Users\\Coding\\Python\\ml\\neural_network\\weights\\weights.h5"
+path = "weights\\weights.h5"
 base_model = Model()
 model = base_model.create_model()
 model.load_weights(path)
