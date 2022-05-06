@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from classes.Model import Model, test_images, class_names
+from classes.Model import Model
+from preprocess import test_images, class_names
 from random import randint
 
 path = "weights\\weights.h5"
