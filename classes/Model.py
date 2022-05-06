@@ -2,10 +2,7 @@ import os
 from keras.models import Sequential
 from keras.layers import Conv2D, Flatten, Dense
 from keras.losses import SparseCategoricalCrossentropy
-
-
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-
 
 class Model:
     def create_model(self):
