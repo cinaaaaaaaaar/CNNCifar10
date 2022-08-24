@@ -20,6 +20,6 @@ class Model:
         return model
 
     def train_network(self, x_train, y_train, x_test, y_test, epochs):
-        path = "weights/weights.h5"
+        weights_path = "weights/weights.h5"
         self.model.fit(x_train, y_train, epochs=epochs, validation_data=(x_test, y_test))
-        self.model.save_weights(path)
+        self.model.save_weights(weights_path)
