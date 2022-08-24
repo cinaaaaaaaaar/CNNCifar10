@@ -4,6 +4,7 @@ from keras.layers import Conv2D, Flatten, Dense
 from keras.losses import SparseCategoricalCrossentropy
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
+
 class Model:
     def create_model(self):
         model = Sequential()
@@ -19,6 +20,6 @@ class Model:
         return model
 
     def train_network(self, x_train, y_train, x_test, y_test, epochs):
-        path = "weights\\weights.h5"
+        path = "weights/weights.h5"
         self.model.fit(x_train, y_train, epochs=epochs, validation_data=(x_test, y_test))
         self.model.save_weights(path)

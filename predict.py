@@ -4,7 +4,7 @@ from classes.Model import Model
 from preprocess import test_images, class_names
 from random import randint
 
-path = "weights\\weights.h5"
+path = "weights/weights.h5"
 base_model = Model()
 model = base_model.create_model()
 model.load_weights(path)
